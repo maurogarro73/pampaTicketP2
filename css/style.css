@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0F0F0;
+    font-family: 'Murecho', sans-serif;
+}
+
+.activa {
+    border-bottom: 2px solid #F26D3D;
+}
+
+/*********************  HEADER *********************/
+.logo img{
+    height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #F26D3D;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+/*********************  MAIN  *********************/
+.main {
+    background-image: url("../img/portada.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1 {
+    color: #F0F0F0;
+    font-family: 'Murecho', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.main p {
+    color: #F0F0F0;
+    font-size: 17px;
+    background-color: rgba( 242, 136, 75, 0.7);
+    padding: 5px;
+}
+
+.main a {
+    padding: 1.5em 3em;
+    font-size: 14px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.main a:hover {
+    background-color: #ffa52f;
+    box-shadow: 0px 15px 20px rgba( 242, 136, 75, 0.7);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.main a:active {
+    transform: translateY(-1px);
+  }
+
+/***************  SOBRE NOSOTROS  ***************/
+.contenedor {
+    background-color: #353535;
+    color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.contenedor img {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.contenedor .sobreNosotros {
+    font-size: 17px;
+    display: inline-block;
+}
+
+.contenedor .sobreNosotros h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.contenedor .sobreNosotros p{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+
+/***************  PROXIMOS RECITALES  ***************/
+.padreGridIndex {
+    width: 100%;
+}
+
+.titulo, .recitales h2 {
+    color: #F0F0F0;
+    font-family: 'Murecho', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.titulo {
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/*** Card ***/
+.card {
+    background-color: rgba( 255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    color: #F0F0F0;
+    background-color: #ff783b;
+    background-image: linear-gradient(0deg, #ff783b 0%, #ff905d  74%);
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*** Fecha y lugar ***/
+.fechaLugar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fechaLugar .fecha {
+    margin: auto;
+}
+
+.fechaLugar .fecha p {
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.lugarBoton {
+    margin-left: 10px;
+    margin: auto;
+}
+
+.lugarBoton p{
+    color: #273440;
+    margin-bottom: 15px;
+    margin: auto;
+}
+
+.lugarBoton button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26D3D;
+    border: 1px #F26D3D solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: auto;
+}
+
+.lugarBoton button:hover {
+    background-color: #273440;
+    border: 1px #273440 solid;
+    transition: 0.3s;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padreGridIndex {
+    display: grid;
+    grid-template-areas: 
+    "tituloGrid tituloGrid tituloGrid tituloGrid"
+    "card1 card2 card3 card4";
+    gap: 10px;
+}
+
+.tituloGrid {
+    grid-area: tituloGrid;
+}
+
+.card1 {
+    grid-area: card1;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card2 {
+    grid-area: card2;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card3 {
+    grid-area: card3;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card4 {
+    grid-area: card4;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*
+ ========================= FIN PAGINA INDEX ==========================
+*/
+
+
+/*
+ ========================= PAGINA SOBRE NOSOTROS ==========================
+*/
+/***********  SECCION SOBRE NOSOTROS  ***********/
+.contenedorSN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contenedorSN img {
+    width: 400px;
+    margin: auto;
+}
+
+.contenedorSN .sobreNosotros h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.contenedorSN .sobreNosotros p{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 17px;
+    margin: auto;
+}
+
+/***************  COMO COMPRAR  ***************/
+.comoComprar {
+    background-color: #273440;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.comoComprar .container .infoComprar h2 {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.comoComprar .container .infoComprar p {
+    text-align: justify;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.comoComprar .container iframe {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+/***************  NUESTRO LOCAL  ***************/
+.nuestroLocal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.nuestroLocal iframe {
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    padding: 5px;
+}
+
+.nuestroLocal .infoNuestroLocal {
+    font-size: 17px;
+    margin: auto;
+}
+
+.infoNuestroLocal h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.infoNuestroLocal p {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 20px;
+    margin: auto;
+}
+
+/*
+ ========================= FIN SOBRE NOSOTROS ==========================
+*/
+
+/*
+ ========================= PAGINA RECITALES ==========================
+*/
+.padreRecitalGrid {
+    display: grid;
+    grid-template-areas:
+    "tituloGrid tituloGrid tituloGrid tituloGrid"
+    "cardR1 cardR2 cardR3 cardR4"
+    "cardR5 cardR6 cardR7 cardR8"
+    "footerGrid footerGrid footerGrid footerGrid";
+    gap: 10px;
+}
+
+.tituloGrid {
+    grid-area: tituloGrid;
+    font-family: 'Murecho', sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cardR1 {
+    grid-area: cardR1;
+    margin: 0 auto;
+}
+
+.cardR2 {
+    grid-area: cardR2;
+    margin: 0 auto;
+}
+
+.cardR3 {
+    grid-area: cardR3;
+    margin: 0 auto;
+}
+
+.cardR4 {
+    grid-area: cardR4;
+    margin: 0 auto;
+}
+
+.cardR5 {
+    grid-area: cardR5;
+    margin: 0 auto;
+}
+
+.cardR6 {
+    grid-area: cardR6;
+    margin: 0 auto;
+}
+
+.cardR7 {
+    grid-area: cardR7;
+    margin: 0 auto;
+}
+
+.cardR8 {
+    grid-area: cardR8;
+    margin: 0 auto;
+}
+/*
+ ========================= FIN PAGINA RECITALES ==========================
+*/
+
+/*
+ ========================= PAGINA CONTACTO ==========================
+*/
+.contacto {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.contacto label {
+    color: #343a40;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.formulario input {
+    border: none;
+    border-bottom: 2px solid #212529;
+    color: #777;
+    background: transparent;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 12px 15px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0;
+    outline: none;
+}
+
+.formulario textarea {
+    border: 1px solid #212529;
+    color: #777;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.formulario .boton {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    font-size: 18px;
+    color: #273440;
+    background-color: #F0F0F0;
+    border: none;
+    height: 55px;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.formulario .boton:hover {
+    color: #fff;
+    background-color: #273440;
+    transition: 0.1s;
+}
+/*
+ =========================FIN PAGINA CONTACTO ==========================
+*/
+
+
+/*********************  FOOTER  *********************/
+.footer {
+    background-color: #273440;
+    text-align: center;
+    color: #F0F0F0;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*********************  MEDIA QUERY  *********************/
+@media screen and (max-width:768px) {
+    /******** INDEX ********/
+    .padreGridIndex {
+        display: grid;
+        grid-template-areas: 
+        "tituloGrid tituloGrid"
+        "card1 card2"
+        "card3 card4";
+    }
+
+    .contenedorindex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedorindex img {
+        padding: 10px;
+    }
+
+    
+    /***** SOBRE NOSOTROS *****/
+    .contenedorSN img {
+        width: 100%;
+    }
+    
+    .contenedorSN .sobreNosotros h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    .comoComprar .infoComprar h2 {
+        font-size: 30px;
+    }
+    
+    .comoComprar .infoComprar p {
+        font-size: 20px;
+    }
+
+    .nuestroLocal {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nuestroLocal iframe {
+        width: 100%;
+    }
+
+    /***************RECITALES***************/
+    .padreRecitalGrid {
+        display: grid;
+        grid-template-areas:
+        "tituloGrid tituloGrid"
+        "cardR1 cardR2"
+        "cardR3 cardR4"
+        "cardR5 cardR6"
+        "cardR7 cardR8"
+        "footerGrid footerGrid";
+        gap: 10px;
+    }
+
+    /****************CONTACTO****************/
+    .contacto {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    /******** INDEX ********/
+    .padreGridIndex {
+        display: grid;
+        grid-template-areas: 
+        "tituloGrid"
+        "card1"
+        "card2"
+        "card3"
+        "card4";
+    }
+    
+    .contenedor img{
+        display: none;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    /******** SOBRE NOSOTROS ********/
+    .contenedorSN img{
+        display: none;
+    }
+
+    .contenedorSN .sobreNosotros{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .comoComprar {
+        flex-wrap: wrap;
+    }
+    .comoComprar .infoComprar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .comoComprar .infoComprar h2 {
+        font-size: 33px;
+    }
+
+    .comoComprar iframe{
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .nuestroLocal {
+        flex-wrap: wrap;
+    }
+
+    .nuestroLocal iframe {
+        padding: 10px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .nuestroLocal .infoNuestroLocal {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /********* RECITALES******** */
+    .padreRecitalGrid {
+        display: grid;
+        grid-template-areas:
+        "tituloGrid"
+        "cardR1"
+        "cardR2"
+        "cardR3"
+        "cardR4"
+        "cardR5"
+        "cardR6"
+        "cardR7"
+        "cardR8"
+        "footerGrid";
+        gap: 10px;
+    }
+
+    /****************CONTACTO****************/
+    .contacto {
+        width: 90%;
+    }
+    .contacto input {
+        width: 100%;
+    }
+
+    .contacto textarea {
+        width: 100%;
+    }
+
+    .formulario .boton {
+        width: 100%;
+    }
+    
+}
