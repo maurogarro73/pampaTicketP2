@@ -492,6 +492,14 @@ a {
  =========================FIN PAGINA CONTACTO ==========================
 */
 
+/*
+ ========================= PAGINA LOGIN ==========================
+*/
+.imgIzq {
+    background-image: url("../img/ticketPared.jpg");
+    background-position: center center;
+    background-size: cover;
+}
 
 /*********************  FOOTER  *********************/
 .footer {
@@ -537,7 +545,7 @@ a {
         margin-bottom: 10px;
         font-size: 30px;
     }
-    
+
     .comoComprar .infoComprar h2 {
         font-size: 30px;
     }
